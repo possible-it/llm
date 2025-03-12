@@ -138,7 +138,7 @@ if __name__ == "__main__":
     parser.add_argument('--n_layers', default=8, type=int)
     parser.add_argument('--max_seq_len', default=512, type=int)
     parser.add_argument('--use_moe', default=False, type=bool)
-    parser.add_argument("--data_path", type=str, default="/kaggle/working/minimind/dataset/pretrain_hq.jsonl")
+    parser.add_argument("--data_path", type=str, default="/kaggle/input/dataset/pretrain_hq.jsonl")
     args = parser.parse_args()
 
     lm_config = LMConfig(dim=args.dim, n_layers=args.n_layers, max_seq_len=args.max_seq_len, use_moe=args.use_moe)
