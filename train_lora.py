@@ -128,7 +128,7 @@ if __name__ == "__main__":
     parser.add_argument('--n_layers', default=8, type=int)
     parser.add_argument('--max_seq_len', default=512, type=int)
     parser.add_argument('--use_moe', default=False, type=bool)
-    parser.add_argument("--data_path", type=str, default="/kaggle/input/dataset/lora_identity.jsonl")
+    parser.add_argument("--data_path", type=str, default="/kaggle/working/minimind/dataset/lora_identity.jsonl")
     parser.add_argument("--lora_name", type=str, default="lora_identity", help="根据任务保存成lora_(英文/医学/心理...)")
     args = parser.parse_args()
 

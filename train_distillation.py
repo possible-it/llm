@@ -198,7 +198,7 @@ if __name__ == "__main__":
     parser.add_argument("--log_interval", type=int, default=100)
     parser.add_argument("--save_interval", type=int, default=100)
     parser.add_argument('--local_rank', type=int, default=-1)
-    parser.add_argument("--data_path", type=str, default="/kaggle/input/dataset/sft_data.jsonl")
+    parser.add_argument("--data_path", type=str, default="/kaggle/working/minimind/dataset/sft_data.jsonl")
 
     args = parser.parse_args()
     # 定义学生模型和教师模型
